@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "2b4401b5-c001-47a9-bb28-5eb31145c282",
+		"name": "SCA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39771861"
+	},
+	"item": [
+		{
+			"name": "List of all spycats.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spy-cats/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spy-cats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new spy cat.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spycats/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spycats",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 1 cat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spycats/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spycats",
+						"1",
+						""
+					]
+				},
+				"description": "GET /spycats/{id}/: Get a specific spy cat."
+			},
+			"response": []
+		},
+		{
+			"name": "Update 1 cat",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spy-cats/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spy-cats",
+						"1"
+					]
+				},
+				"description": "PUT/PATCH /spycats/{id}/: Update a specific spy cat."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cat 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spy-cats/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spy-cats",
+						"1"
+					]
+				},
+				"description": "Delete a specific spy cat (cannot delete if assigned to a mission)."
+			},
+			"response": []
+		},
+		{
+			"name": "List of all missions.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new mission.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 1 mission.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1"
+					]
+				},
+				"description": "GET /missions/{id}/: Get a specific mission."
+			},
+			"response": []
+		},
+		{
+			"name": "Update 1 mission.",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete 1 mission.",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1"
+					]
+				},
+				"description": "DELETE /missions/{id}/: Delete a specific mission (cannot delete if assigned to a spy cat)."
+			},
+			"response": []
+		},
+		{
+			"name": "Assign a 1 cat to a mission.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1/assign_cat/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1",
+						"assign_cat",
+						""
+					]
+				},
+				"description": "POST /missions/{id}/assign_cat/: Assign a spy cat to a mission."
+			},
+			"response": []
+		},
+		{
+			"name": "Update target for 1 mission.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1/update_targets/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1",
+						"update_targets",
+						""
+					]
+				},
+				"description": "POST /missions/{id}/update_targets/: Update targets of a mission"
+			},
+			"response": []
+		},
+		{
+			"name": "List of all targets for a mission.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1/targets",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1",
+						"targets"
+					]
+				},
+				"description": "GET /missions/{id}/targets/: List all targets for a mission.\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Add targets to 1 mission.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1/targets",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1",
+						"targets"
+					]
+				},
+				"description": "POST /missions/{id}/targets/: Add targets to a mission."
+			},
+			"response": []
+		},
+		{
+			"name": "Update a specific target.",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/missions/1/targets/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"missions",
+						"1",
+						"targets",
+						"1"
+					]
+				},
+				"description": "PUT/PATCH /missions/{id}/targets/{target_id}/: Update a specific target."
+			},
+			"response": []
+		}
+	]
+}
